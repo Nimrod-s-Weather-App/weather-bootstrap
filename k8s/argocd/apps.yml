@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: weather-service
-  namespace: argocd
+  namespace: weather-infra
 spec:
   project: weather-project
   source:
@@ -11,7 +11,7 @@ spec:
     path: k8s
   destination:
     server: https://kubernetes.default.svc
-    namespace: weather-app
+    namespace: weather-services
   syncPolicy:
     automated:
       prune: true
@@ -22,7 +22,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: weather-notifications-service
-  namespace: argocd
+  namespace: weather-infra
 spec:
   project: weather-project
   source:
@@ -31,7 +31,7 @@ spec:
     path: k8s
   destination:
     server: https://kubernetes.default.svc
-    namespace: weather-app
+    namespace: weather-services
   syncPolicy:
     automated:
       prune: true
@@ -42,7 +42,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: kafka
-  namespace: argocd
+  namespace: weather-infra
 spec:
   project: weather-project
   source:
@@ -62,7 +62,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: zookeeper
-  namespace: argocd
+  namespace: weather-infra
 spec:
   project: weather-project
   source:

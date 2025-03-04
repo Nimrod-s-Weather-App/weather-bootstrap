@@ -10,7 +10,7 @@ spec:
     - https://github.com/Nimrod-s-weather-app/weather-notifications-service.git
     - https://github.com/Nimrod-s-weather-app/weather-infra.git
   destinations:
-    - namespace: weather-app
+    - namespace: weather-services
       server: https://kubernetes.default.svc
     - namespace: weather-infra
       server: https://kubernetes.default.svc
