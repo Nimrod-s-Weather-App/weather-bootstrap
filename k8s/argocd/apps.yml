@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: weather-service
-  namespace: weather-infra
+  namespace: weather-services
 spec:
   project: weather-project
   source:
@@ -21,7 +21,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: weather-notifications-service
-  namespace: weather-infra
+  namespace: weather-services
 spec:
   project: weather-project
   source:
