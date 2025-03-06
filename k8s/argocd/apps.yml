@@ -47,7 +47,7 @@ spec:
   project: weather-project
   source:
     repoURL: https://github.com/Nimrod-s-weather-app/weather-infra.git
-    targetRevision: master
+    targetRevision: main
     path: charts/kafka    
   destination:
     server: https://kubernetes.default.svc
@@ -67,7 +67,7 @@ spec:
   project: weather-project
   source:
     repoURL: https://github.com/Nimrod-s-weather-app/weather-infra.git
-    targetRevision: master
+    targetRevision: main
     path: charts/zookeeper   
   destination:
     server: https://kubernetes.default.svc
