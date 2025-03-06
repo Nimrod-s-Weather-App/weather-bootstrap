@@ -11,6 +11,7 @@ spec:
     path: charts/weather-service    
   destination:
     server: https://kubernetes.default.svc
+    namespace: weather-services
   syncPolicy:
     automated:
       prune: true
@@ -30,6 +31,7 @@ spec:
     path: charts/weather-notifications-service  
   destination:
     server: https://kubernetes.default.svc
+    namespace: weather-services
   syncPolicy:
     automated:
       prune: true
@@ -49,6 +51,7 @@ spec:
     path: charts/kafka    
   destination:
     server: https://kubernetes.default.svc
+    namespace: weather-infra
   syncPolicy:
     automated:
       prune: true
@@ -68,6 +71,7 @@ spec:
     path: charts/zookeeper   
   destination:
     server: https://kubernetes.default.svc
+    namespace: weather-infra
   syncPolicy:
     automated:
       prune: true

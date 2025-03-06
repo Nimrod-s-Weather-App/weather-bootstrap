@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
   name: weather-project
-  namespace: weather-infra
+  namespace: argocd
 spec:
   description: Weather App Project with microservices and infrastructure
   sourceRepos:
