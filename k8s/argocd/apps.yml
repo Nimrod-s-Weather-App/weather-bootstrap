@@ -68,7 +68,7 @@ spec:
   source:
     repoURL: https://github.com/Nimrod-s-weather-app/weather-infra.git
     targetRevision: master
-    path: Charts/zookeeper   
+    path: charts/zookeeper   
   destination:
     server: https://kubernetes.default.svc
     namespace: weather-infra
