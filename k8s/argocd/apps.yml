@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: weather-service
-  namespace: weather-services
+  namespace: argocd
 spec:
   project: weather-project
   source:
@@ -21,7 +21,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: weather-notifications-service
-  namespace: weather-services
+  namespace: argocd
 spec:
   project: weather-project
   source:
@@ -40,7 +40,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: kafka
-  namespace: weather-infra
+  namespace: argocd
 spec:
   project: weather-project
   source:
@@ -59,7 +59,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: zookeeper
-  namespace: weather-infra
+  namespace: argocd
 spec:
   project: weather-project
   source:
