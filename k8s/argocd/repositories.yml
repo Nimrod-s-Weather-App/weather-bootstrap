@@ -1,0 +1,34 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Repository
+metadata:
+  name: weather-service-repo
+  namespace: argocd
+spec:
+  type: git
+  url: https://github.com/Nimrod-s-weather-app/weather-service.git
+  targetRevision: master
+  insecure: true  # Optional: you can remove this line if using HTTPS
+
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Repository
+metadata:
+  name: weather-notifications-service-repo
+  namespace: argocd
+spec:
+  type: git
+  url: https://github.com/Nimrod-s-weather-app/weather-notifications-service.git
+  targetRevision: master
+  insecure: true  # Optional: you can remove this line if using HTTPS
+
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Repository
+metadata:
+  name: weather-infra-repo
+  namespace: argocd
+spec:
+  type: git
+  url: https://github.com/Nimrod-s-weather-app/weather-infra.git
+  targetRevision: main
+  insecure: true  # Optional: you can remove this line if using HTTPS
