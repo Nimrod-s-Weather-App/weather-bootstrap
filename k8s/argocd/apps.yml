@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/Nimrod-s-weather-app/weather-service.git
     targetRevision: master
-    path: charts/weather-service    
+    path: charts/weather-service/templates
   destination:
     server: https://kubernetes.default.svc
     namespace: weather-services
@@ -28,7 +28,7 @@ spec:
   source:
     repoURL: https://github.com/Nimrod-s-weather-app/weather-notifications-service.git
     targetRevision: master
-    path: charts/weather-notifications-service  
+    path: charts/weather-notifications-service/templates
   destination:
     server: https://kubernetes.default.svc
     namespace: weather-services
@@ -48,7 +48,7 @@ spec:
   source:
     repoURL: https://github.com/Nimrod-s-weather-app/weather-infra.git
     targetRevision: main
-    path: charts/kafka    
+    path: charts/kafka/templates
   destination:
     server: https://kubernetes.default.svc
     namespace: weather-infra
@@ -68,7 +68,7 @@ spec:
   source:
     repoURL: https://github.com/Nimrod-s-weather-app/weather-infra.git
     targetRevision: main
-    path: charts/zookeeper   
+    path: charts/zookeeper/templates
   destination:
     server: https://kubernetes.default.svc
     namespace: weather-infra
