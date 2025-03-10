@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/Nimrod-s-weather-app/weather-service.git
     targetRevision: master
-    path: charts/weather-service/templates
+    path: charts/weather-service
   destination:
     server: https://kubernetes.default.svc
     namespace: weather-services
@@ -28,7 +28,7 @@ spec:
   source:
     repoURL: https://github.com/Nimrod-s-weather-app/weather-notifications-service.git
     targetRevision: master
-    path: charts/weather-notifications-service/templates
+    path: charts/weather-notifications-service
   destination:
     server: https://kubernetes.default.svc
     namespace: weather-services
